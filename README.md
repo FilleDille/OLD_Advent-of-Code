@@ -1,0 +1,1 @@
+#Lazy me kept the code for day 2 - 7 of 2021 locally on a computer that crashed. Lesson learned.
