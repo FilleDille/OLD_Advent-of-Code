@@ -14,8 +14,6 @@ def part_1():
             print(len(digit))
             if len(digit) == 2 or len(digit) == 3 or len(digit) == 4 or len(digit) == 7:
                 counter += 1
-                
-
         
     return counter
 
