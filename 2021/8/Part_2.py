@@ -1,4 +1,4 @@
-def part_2():
+def main():
     with open('input.txt', 'r') as f:
         input_raw = f.readlines()
         f.close()
@@ -81,4 +81,5 @@ def part_2():
 
     return sum_digits
 
-print(part_2())
+if __name__ == '__main__':
+    print(main())

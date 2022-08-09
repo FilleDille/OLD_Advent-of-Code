@@ -1,4 +1,4 @@
-def part_1():
+def main():
     with open('input.txt', 'r') as f:
         input_raw = f.readlines()
         f.close()
@@ -11,10 +11,10 @@ def part_1():
         temp_right[3] = temp_right[3].replace('\n','')
 
         for digit in temp_right:
-            print(len(digit))
             if len(digit) == 2 or len(digit) == 3 or len(digit) == 4 or len(digit) == 7:
                 counter += 1
         
     return counter
 
-print(part_1())
+if __name__ == '__main__':
+    print(main())
