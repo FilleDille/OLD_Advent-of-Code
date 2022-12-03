@@ -4,6 +4,8 @@ import time
 
 
 class elf:
+    t0 = time.time()
+
     with open('input.txt', 'r') as f:
         inp = f.read().splitlines()
         f.close()
@@ -53,7 +55,6 @@ class elf:
 
 
 if __name__ == "__main__":
-    t0 = time.time()
     part = sys.argv[1]
 
     if part == '1':
@@ -62,4 +63,4 @@ if __name__ == "__main__":
         print(elf.part_2())
     t1 = time.time()
 
-    print(f'{str(round((t1-t0)*1000,3))} ms för del {part}')
+    print(f'{str(round((t1-elf.t0)*1000,3))} ms för del {part}')
