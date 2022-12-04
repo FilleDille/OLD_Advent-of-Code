@@ -5,23 +5,13 @@ from time import time
 class elf:
     t0 = time()
 
-    with open('input.txt', 'r') as f:
-        raw = f.read().splitlines()
-        f.close()
-
     counter = 0
     elf_1_sets = []
     elf_2_sets = []
 
-    for line in raw:
-        elf_1_raw = line.split(',')[0]
-        n1_1 = elf_1_raw.split('-')[0]
-        n2_1 = elf_1_raw.split('-')[1]
-
-        elf_2_raw = line.split(',')[1]
-        n1_2 = elf_2_raw.split('-')[0]
-        n2_2 = elf_2_raw.split('-')[1]
-
+    for line in open('input.txt', 'r'):
+        n1_1, n2_1, n1_2, n2_2 = map(lambda x: int(
+            x), line.strip('\n').replace('-', ',').split(','))
         elf_1_sets.append(set(range(int(n1_1), int(n2_1) + 1)))
         elf_2_sets.append(set(range(int(n1_2), int(n2_2) + 1)))
 
