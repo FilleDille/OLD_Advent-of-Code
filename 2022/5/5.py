@@ -10,17 +10,10 @@ class elf:
         raw_init = f.read().splitlines()
         f.close()
 
-    stack_dict = {
-        1: queue.LifoQueue(),
-        2: queue.LifoQueue(),
-        3: queue.LifoQueue(),
-        4: queue.LifoQueue(),
-        5: queue.LifoQueue(),
-        6: queue.LifoQueue(),
-        7: queue.LifoQueue(),
-        8: queue.LifoQueue(),
-        9: queue.LifoQueue()
-    }
+    stack_dict = {}
+
+    for i in range(1, 10):
+        stack_dict[i] = queue.LifoQueue()
 
     for line in reversed(raw_init):
         for i in range(35):
