@@ -36,7 +36,7 @@ fn part_2(lines_u: &Vec<u32>) {
         let missing_number_1 = 2020 - number_1;
 
         let lines_u_2: Vec<u32> = lines_u.iter()
-            .filter(|&nmbr| *nmbr <= missing_number_1)
+            .filter(|&nmbr| nmbr <= &missing_number_1)
             .copied()
             .collect();
 
