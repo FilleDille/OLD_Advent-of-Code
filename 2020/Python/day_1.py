@@ -26,4 +26,7 @@ def part_2(inp):
         else:
             continue
         break
-main()
+
+
+if __name__ == "__main__":
+    main()
