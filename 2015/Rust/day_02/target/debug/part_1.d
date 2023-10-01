@@ -1,0 +1,1 @@
+/Users/filipengstrom/Desktop/programmering/Advent/2015/Rust/day_02/target/debug/part_1: /Users/filipengstrom/Desktop/programmering/Advent/2015/Rust/day_02/src/bin/part_1.rs /Users/filipengstrom/Desktop/programmering/Advent/2015/Rust/day_02/src/lib.rs
